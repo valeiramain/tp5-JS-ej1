@@ -12,3 +12,11 @@ body {
 main {
   flex-grow: 1;
 }
+
+
+.form-magico {
+  background-color: rgba(226, 222, 116, 0.4); /* con 40% de opacidad */
+  padding: 20px;
+  border-radius: 10px;
+  /* display: inline-block; */
+}

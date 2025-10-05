@@ -17,13 +17,27 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container py-2">
-                <a class="navbar-brand" href="#">Números Mágicos</a>
-                <button class="btn btn-primary">Empezar</button>
+                <a class="navbar-brand text-primary-emphasis fw-bold" href="#">Números Mágicos🪄</a>
             </div>
         </nav>
     </header>
-    <main></main>
-    <footer class="text-center py-3 bg-body-tertiary">">
+    <main>
+        <form class="container form-magico my-5 text-center p-3">
+            <div class="mb-4">
+                <label for="nroMagico" class="form-label display-4 fw-bold">Ingrese un número:</label>
+                <input type="number" class="form-control w-md-25 mx-auto fs-4" id="nroMagico" placeholder="Número Mágico">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-warning fs-4">Comenzar</button>
+            </div>
+        </form>
+        <section class="container text-center">
+<div class="p-3 mb-2 bg-info-subtle text-info-emphasis">👆El número mágico es más grande</div>
+<div class="p-3 mb-2 bg-danger-subtle text-danger-emphasis">👇El número mágico es más chico</div>
+<div class="p-3 mb-2 bg-success-subtle text-success-emphasis">👏Felicitaciones! Encontraste el número mágico.</div>
+        </section>
+    </main>
+    <footer class="text-center py-3 bg-body-tertiary">
         <p>&copy; Todos los derechos reservados 2025</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -15,11 +15,13 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container py-2">
-                <a class="navbar-brand text-primary-emphasis fw-bold" href="#">Números Mágicos 🪄</a>
-            </div>
-        </nav>
+        <div class="container py-2">
+            <a class="navbar-brand text-primary-emphasis fw-bold" href="#">Números Mágicos 🪄</a>
+            <button class="btn btn-secondary" id="btnComenzar">Comenzar</button>
+        </div>
+    </nav>
     <main>
+
         <form class="container form-magico my-5 text-center p-3">
             <div class="mb-4">
                 <label for="nroMagico" class="form-label display-4 fw-bold text-primary-emphasis">Ingrese un
@@ -28,7 +30,7 @@
                     placeholder="ingrese Nro entre 0 y 1000" minlength="0" maxlength="1000" required>
             </div>
             <div class="mb-3">
-                <button type="submit" class="btn btn-warning fs-4 primary-emphasis">Comenzar</button>
+                <button type="submit" class="btn btn-warning fs-4 primary-emphasis">Enviar</button>
             </div>
         </form>
         <section class="container text-center" id="resultado">

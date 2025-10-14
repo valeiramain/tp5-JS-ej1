@@ -1,9 +1,16 @@
+function aleatorio(){
+    console.log('en generar aleatorio')
+     numeroAleatorio = Math.floor(Math.random() * 1001);
+    // numeroAleatorio = 120
+    console.log(numeroAleatorio)
+}
+
 function nroMagico(e) {
     e.preventDefault();
 
-    const numeroAleatorio = Math.floor(Math.random() * 1001);
+    // const numeroAleatorio = Math.floor(Math.random() * 1001);
     // const numeroAleatorio = 120
-    console.log(numeroAleatorio);
+    // console.log(numeroAleatorio);
     const nroIngresado = Number(document.querySelector('input').value)
     console.log(nroIngresado);
 
@@ -26,7 +33,11 @@ function nroMagico(e) {
 
 
 /*******************DOM **************** */
+let numeroAleatorio = 0
+const comenzar = document.querySelector('#btnComenzar')
+console.log(comenzar)
 const formulario = document.querySelector('form')
 console.log(formulario)
 
+comenzar.addEventListener('click',aleatorio)
 formulario.addEventListener('submit', nroMagico)
